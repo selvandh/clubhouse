@@ -285,8 +285,9 @@ body {
   border: 2.5px solid #e52323;
 }
 .ser-iten3:hover > img {
-  transition: scale(1.1);
+  transition: scale(1.3);
 }
+
 .kw {
   border-style: solid;
   width: 200px;
