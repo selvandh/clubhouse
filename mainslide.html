@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .mainslide {
+      height: 90vh;
+      width: 100vw;
+      background: rgb(255, 255, 255);
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+    .mainslide img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: ani 10s infinite linear;
+      transform: scale(1);
+    }
+    .mainslide .txt {
+      color: white;
+      position: relative;
+      text-align: center;
+    }
+    .mainslide .txt div {
+      font-size: 50px;
+      animation: ta 1.5s;
+    }
+    .vi {
+      border-style: solid;
+      width: 200px;
+      padding: 10px;
+      position: static;
+      margin: auto;
+      font-size: large;
+    }
+    .vi:hover {
+      cursor: pointer;
+    }
+
+    @keyframes ani {
+      10% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.5);
+      }
+    }
+
+    @keyframes ta {
+      0% {
+        transform: translatey(250px);
+        opacity: 0;
+      }
+      100% {
+        transform: translatey(0);
+        opacity: 1;
+      }
+    }
+  </style>
+  <body>
+    <div class="mainslide">
+      <img src="./image/mainslide-01-1.jpg" alt="" />
+
+      <div class="txt">
+        <div>
+          <h6>The Perfect Nightlife</h6>
+          <br />
+
+          <p style="font-size: 40px; font-weight: bolder">
+            FEEL THE NIGHT HERE <br />With Friends
+          </p>
+
+          <p style="font-size: 20px; font-weight: bolder">
+            Theme nights,Private Events and Restaurant Food
+          </p>
+          <br />
+
+          <h2 class="vi">view tickets</h2>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const data = [
+        { img: "./image/mainslide-03-1.jpg" },
+        { img: "./image/mainslide-04-1.jpg" },
+        { img: "./image/mainslide-01-1.jpg" },
+      ];
+
+      const imgElement = document.querySelector("#trans-img");
+      const txt = document.querySelector(".txt");
+
+      let count = 0;
+      timer = setInterval(() => {
+        count += 1;
+        let si = count % data.length;
+        //   imgElement.setAttribute("src", data[si]);
+        imgElement.src = data[si];
+        txt.innerHTML = `<div>${data[si].text}</div> <p>${data[si].sub}</p>`;
+      }, 10 * 1000);
+    </script>
+  </body>
+</html>

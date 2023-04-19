@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.b1 {
+  padding: 5px 50px 0px 5px;
+}
+.b {
+  padding: 5px 50px 0px 5px;
+}
+.b7 {
+  padding: 1px 30px 0px 80px;
+}
+.a {
+  border-style: solid;
+  border-width: 3px;
+  padding: 10px;
+}
+.navi {
+  color: white;
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+.b1 {
+  color: red;
+}
+.b1:hover {
+  color: aliceblue;
+  cursor: pointer;
+}
+.b,
+.b7:hover {
+  cursor: pointer;
+}
+.sub {
+  background-color: white;
+  color: black;
+  padding: 6px;
+  justify-content: center;
+  list-style-type: none;
+}
+.menu {
+  display: none;
+}

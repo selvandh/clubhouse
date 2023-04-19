@@ -1,0 +1,848 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aliceblue;
+}
+
+.mainslide {
+  height: 93vh;
+  width: 100vw;
+  background: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.mainslide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: ani 10s infinite linear;
+  transform: scale(1);
+}
+
+.mainslide .txt {
+  color: white;
+  position: relative;
+  text-align: center;
+}
+.mainslide .txt div {
+  font-size: 50px;
+}
+.mainslide .txt div.ta {
+  animation: ta 10s infinite linear;
+}
+
+.vi {
+  border-style: solid;
+  width: 200px;
+  padding: 10px;
+  position: static;
+  margin: auto;
+  font-size: large;
+}
+.vi:hover {
+  cursor: pointer;
+}
+
+@keyframes ani {
+  10% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes ta {
+  0% {
+    transform: translatey(250px);
+    opacity: 0;
+  }
+  10% {
+    transform: translatey(0);
+    opacity: 1;
+  }
+}
+
+.event1 {
+  font-size: 200px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+.event2 {
+  position: static;
+  margin-top: -150px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.swiper-slide:hover {
+  cursor: pointer;
+}
+
+.linkvideo {
+  background-image: url(.//image/12.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 500px;
+  width: 50%;
+  margin-top: 150px;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linkvideo:hover {
+  cursor: pointer;
+}
+.nty {
+  writing-mode: vertical-rl;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
+  font-size: 80px;
+  height: auto;
+}
+.about {
+  height: 630px;
+  width: 50%;
+  background-color: gray;
+  color: white;
+  position: static;
+  margin-top: -630px;
+  margin-left: 50%;
+}
+.h,
+.hh,
+.hhh {
+  width: 50%;
+  margin-right: 50%;
+  text-align: right;
+  padding: 10px;
+  position: static;
+}
+.cd {
+  border-style: solid;
+  width: 200px;
+  padding: 10px;
+  position: static;
+  margin: 10px;
+  margin-top: 40px;
+  font-weight: bolder;
+  font-size: large;
+  text-align: center;
+  justify-content: left;
+  margin-right: 40%;
+}
+.cd:hover {
+  cursor: pointer;
+}
+
+.ab1 {
+  padding-top: 30px;
+  padding-right: 50px;
+  font-size: 200px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgb(172, 177, 182);
+}
+.about1 {
+  background-color: white;
+  height: 650px;
+  width: 50%;
+  text-align: right;
+}
+.ab2 {
+  padding-right: 50px;
+}
+.p,
+.p1,
+.p2 {
+  width: 50%;
+  margin-left: 50%;
+  text-align: left;
+  padding: 10px;
+  position: static;
+}
+.cd1 {
+  border-style: solid;
+  width: 200px;
+  padding: 10px;
+  position: static;
+  margin: 10px;
+  margin-top: 40px;
+  font-weight: bolder;
+  font-size: large;
+  text-align: center;
+  justify-content: right;
+  margin-left: 50%;
+}
+.cd1:hover {
+  cursor: pointer;
+}
+.linkvideo1 {
+  background-image: url(./image/06.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 550px;
+  width: 50%;
+  position: static;
+  margin-left: 50%;
+  margin-top: -650px;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.linkvideo1:hover {
+  cursor: pointer;
+}
+.day {
+  writing-mode: vertical-lr;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
+  font-size: 80px;
+  height: auto;
+}
+.service {
+  margin-top: 200px;
+  font-size: 200px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
+  color: azure;
+}
+.wt {
+  height: 100px;
+  width: 630px;
+  text-align: center;
+  position: static;
+  margin: auto;
+  margin-top: -150px;
+}
+.container1 {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.ser-iten1 {
+  height: 500px;
+  width: 400px;
+  margin: 50px;
+  color: white;
+}
+.ser-iten1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+  border: 2.5px solid #e52323;
+}
+.ser-iten1:hover > img {
+  transition: scale(1.1);
+}
+.ser-iten2 {
+  height: 500px;
+  width: 400px;
+  margin: 50px;
+  color: white;
+}
+.ser-iten2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+  border: 2.5px solid #e52323;
+}
+.ser-iten2:hover > img {
+  transition: scale(1.1);
+}
+.ser-iten3 {
+  height: 500px;
+  width: 400px;
+  margin: 50px;
+  text-align: center;
+}
+.ser-iten3 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+  border: 2.5px solid #e52323;
+}
+.ser-iten3:hover > img {
+  transition: scale(1.1);
+}
+.kw {
+  border-style: solid;
+  width: 200px;
+  padding: 10px;
+  position: static;
+  margin: 10px;
+  margin-top: 50px;
+  font-weight: bolder;
+  font-size: large;
+  text-align: center;
+  text-align: center;
+}
+.kw:hover {
+  cursor: pointer;
+}
+
+.lable {
+  height: 150px;
+  width: 150px;
+  background-color: #e52323;
+  color: white;
+  text-align: center;
+  position: absolute;
+  margin-left: 950px;
+  padding: 10px;
+  display: block;
+}
+.lbicon {
+  font-size: 25px;
+  text-align: center;
+}
+.shortcode1 {
+  background-image: url(./image/promo-box-wide01.jpg);
+  height: 80vh;
+  width: 60%;
+  background-position: center;
+  z-index: 1;
+  position: static;
+}
+.addtion-service {
+  background-color: white;
+  height: 60vh;
+  width: 55%;
+  position: static;
+  margin-left: auto;
+  margin-top: -680px;
+}
+.add {
+  padding-top: 30px;
+  margin-left: 150px;
+  font-size: 200px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px beige;
+}
+.adser {
+  margin-top: -150px;
+  margin-left: 50px;
+}
+.list {
+  list-style-image: url(./image/download.svg);
+}
+.list:hover {
+  cursor: pointer;
+}
+.odlist {
+  display: flex;
+  margin: 20px;
+  font-size: 20px;
+}
+.shortcode2 {
+  height: 500px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+.vip {
+  border-style: solid;
+  width: 200px;
+  padding: 10px;
+  position: static;
+  font-weight: bolder;
+  font-size: large;
+  text-align: center;
+}
+.Residents {
+  font-size: 200px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
+  color: azure;
+}
+.resi {
+  text-align: center;
+  margin-top: -100px;
+}
+.container2 {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.wapper1 {
+  height: 450px;
+  width: 400px;
+  overflow: hidden;
+  margin-right: 50px;
+}
+.wapper1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.wapper1:hover > img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.wapper2 {
+  height: 450px;
+  width: 400px;
+  overflow: hidden;
+  margin-right: 50px;
+}
+.wapper2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.wapper2:hover > img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.wapper3 {
+  height: 450px;
+  width: 400px;
+  overflow: hidden;
+  margin-right: 50px;
+}
+.wapper3 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.wapper3:hover > img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.season {
+  height: 60vh;
+  width: 100%;
+  background-image: url(./image/section-parallax.jpg);
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+.season,
+h1 {
+  letter-spacing: 2px;
+}
+.season,
+h4 {
+  margin-bottom: 40px;
+}
+.inrbtn {
+  border-style: solid;
+  width: 200px;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: large;
+  position: static;
+  margin: auto;
+}
+.gallery {
+  font-size: 200px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
+  color: azure;
+}
+.glly {
+  font-size: large;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: -100px;
+}
+.glly1 {
+  font-size: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  font-weight: bold;
+}
+.vipclubio:hover {
+  cursor: pointer;
+  color: rgb(28, 28, 110);
+  text-decoration: underline solid red;
+}
+.instagram {
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 635px; */
+  height: 60vh;
+  width: 100%;
+  margin-top: 50px;
+}
+.insta1 {
+  height: 317px;
+  width: 317px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.insta1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.insta1:hover > img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.insta2 {
+  height: 317px;
+  width: 317px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.insta2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.insta2:hover > img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.insta3 {
+  height: 317px;
+  width: 317px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.insta3 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.insta3:hover > img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.insta4 {
+  height: 317px;
+  width: 317px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.insta4 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.insta4:hover > img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.insta5 {
+  height: 317px;
+  width: 317px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.insta5 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.insta5:hover > img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.insta6 {
+  height: 317px;
+  width: 317px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.insta6 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.insta6:hover > img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.insta7 {
+  height: 317px;
+  width: 317px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.insta7 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.insta7:hover > img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.insta8 {
+  height: 317px;
+  width: 317px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.insta8 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.insta8:hover > img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.insta9 {
+  height: 317px;
+  width: 317px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.insta9 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.insta9:hover > img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.insta10 {
+  height: 317px;
+  width: 317px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.insta10 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.insta10:hover > img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.insta11 {
+  height: 317px;
+  width: 317px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.insta11 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.insta11:hover > img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.insta12 {
+  height: 317px;
+  width: 317px;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+.insta12 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 1.5s;
+  transform: scale(1);
+}
+.insta12:hover > img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.ins {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-image: url(./image/insta.jpg);
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+}
+.feelll {
+  justify-content: center;
+  text-align: center;
+  margin-top: 150px;
+  align-items: center;
+}
+.explore {
+  border-style: solid;
+  width: 200px;
+  padding: 10px;
+  position: static;
+  margin: auto;
+  font-size: larger;
+  font-weight: bolder;
+}
+.explore:hover {
+  cursor: pointer;
+}
+.footer {
+  margin-top: 150px;
+  background-image: url(./image/footer_02.jpg);
+  background-size: cover;
+  height: 65vh;
+}
+.footerindex {
+  width: 50%;
+  margin-left: 400px;
+  display: flex;
+  color: white;
+  padding-top: 150px;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: larger;
+}
+.ft1:hover {
+  color: #e52323;
+  cursor: pointer;
+}
+.ft2:hover {
+  color: #e52323;
+  cursor: pointer;
+}
+.ft3:hover {
+  color: #e52323;
+  cursor: pointer;
+}
+.ft4:hover {
+  color: #e52323;
+  cursor: pointer;
+}
+.ft5:hover {
+  color: #e52323;
+  cursor: pointer;
+}
+.ft6:hover {
+  color: #e52323;
+  cursor: pointer;
+}
+.lct {
+  color: white;
+  font-size: large;
+  margin-top: 100px;
+  margin-left: 20%;
+}
+.cont {
+  color: white;
+  font-size: large;
+  margin-top: -95px;
+  margin-left: 40%;
+}
+.wrkhrs {
+  color: white;
+  font-size: larger;
+  margin-top: -95px;
+  margin-left: 65%;
+}
+.icn {
+  font-size: 30px;
+  list-style-type: none;
+  display: flex;
+  margin-left: 710px;
+  padding: 50px;
+  letter-spacing: 50px;
+  color: white;
+}
+.icn1:hover {
+  cursor: pointer;
+  color: #e52323;
+}
+.end {
+  font-size: larger;
+  color: white;
+  margin-left: 750px;
+}
+.nd {
+  display: flex;
+}
+.nd1:hover {
+  cursor: pointer;
+  color: red;
+}
