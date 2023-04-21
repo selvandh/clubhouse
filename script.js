@@ -1,3 +1,5 @@
+//.....................navibar....................
+
 const navibar = document.querySelector(".navi");
 
 document.addEventListener("scroll", () => {
@@ -23,6 +25,8 @@ const txt = document.querySelector(".ta");
 let count = 0;
 timer = setInterval(() => {
   count += 1;
+  txt.classList.add("ta");
+
   let si = count % data.length;
   imgElement.src = data[si].img;
   console.log(imgElement);

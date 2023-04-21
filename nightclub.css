@@ -16,6 +16,7 @@ body {
   align-items: center;
   overflow: hidden;
 }
+
 .mainslide img {
   height: 100%;
   width: 100%;
@@ -26,7 +27,15 @@ body {
   animation: ani 10s infinite linear;
   transform: scale(1);
 }
-
+.imageoverlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.7;
+}
 .mainslide .txt {
   color: white;
   position: relative;
@@ -237,57 +246,89 @@ body {
   justify-content: center;
 }
 .ser-iten1 {
-  height: 500px;
-  width: 400px;
-  margin: 50px;
-  color: white;
-}
-.ser-iten1 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  transition: 1.5s;
-  transform: scale(1);
-  border: 2.5px solid #e52323;
-}
-.ser-iten1:hover > img {
-  transition: scale(1.1);
-}
-.ser-iten2 {
-  height: 500px;
-  width: 400px;
-  margin: 50px;
-  color: white;
-}
-.ser-iten2 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  transition: 1.5s;
-  transform: scale(1);
-  border: 2.5px solid #e52323;
-}
-.ser-iten2:hover > img {
-  transition: scale(1.1);
-}
-.ser-iten3 {
+  background-image: url(./image/events-offer-02-1.jpg);
   height: 500px;
   width: 400px;
   margin: 50px;
   text-align: center;
-}
-.ser-iten3 img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  transition: 1.5s;
-  transform: scale(1);
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
   border: 2.5px solid #e52323;
 }
-.ser-iten3:hover > img {
+.ser-iten1:hover {
   transition: scale(1.1);
+  animation: ser 2s linear;
+}
+.ser-iten2 {
+  background-image: url(./image/events-offer-01-1.jpg);
+  height: 500px;
+  width: 400px;
+  margin: 50px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  border: 2.5px solid #e52323;
 }
 
+.ser-iten2:hover {
+  transition: scale(1.1);
+  animation: ser 2s linear;
+}
+.ser-iten3 {
+  background-image: url(./image/events-offer-03-1.jpg);
+  height: 500px;
+  width: 400px;
+  margin: 50px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  border: 2.5px solid #e52323;
+}
+
+.ser-iten3:hover {
+  transition: scale(1.1);
+  animation: ser 2s linear;
+}
+.ser-txt {
+  animation: sertxt 2s linear;
+}
+@keyframes ser {
+  10% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+@keyframes sertxt {
+  0% {
+    transform: translateY(230px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .kw {
   border-style: solid;
   width: 200px;
@@ -302,6 +343,7 @@ body {
 }
 .kw:hover {
   cursor: pointer;
+  color: #e52323;
 }
 
 .lable {
@@ -376,6 +418,9 @@ body {
   font-weight: bolder;
   font-size: large;
   text-align: center;
+}
+.vip:hover {
+  cursor: pointer;
 }
 .Residents {
   font-size: 200px;
@@ -475,6 +520,9 @@ h4 {
   position: static;
   margin: auto;
 }
+.inrbtn:hover {
+  cursor: pointer;
+}
 .gallery {
   font-size: 200px;
   text-align: center;
@@ -506,7 +554,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   /* height: 635px; */
-  height: 60vh;
+  height: fit-content;
   width: 100%;
   margin-top: 50px;
 }
